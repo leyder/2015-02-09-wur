@@ -1,19 +1,19 @@
 ---
 layout: workshop
 root: .
-venue: Some University
-address: 456 Main St #123 Somewhere, SW
-country: Canada
-language: fr
-latlng: 12.34, -56.78
-humandate: Jan 02-03, 2015
+venue: Wageningen University & Research
+address: Room PC0093+PC0094, Radix Building (107), Wageningen Universiteit, Droevendaalsesteeg 1, 6708 PB Wageningen, The Netherlands
+country: Netherlands
+language: en
+latlng: 51.986528, 5.663444
+humandate: Feb 09-10, 2015
 humantime: 9:00 am - 4:30 pm
-startdate: 2015-01-02
-enddate: 2015-01-03
-instructor: ["A Nice Human", "Some Human", "Another Nice-Human"]
-helper: ["More NicePeople", "Smart Human"]
-contact: someone@somewhere.org
-etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
+startdate: 2015-02-09
+enddate: 2015-02-10
+instructor: ["Karin Lagesen", "JC Leyder"]
+helper: []
+contact: karin.lagesen@medisin.uio.no
+etherpad: https://etherpad.mozilla.org/2015-02-09-wur
 eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
 ---
 <!--
@@ -59,9 +59,13 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   Explain who your audience is.  (In particular, tell readers if the
   workshop is only open to people from a particular institution.
 -->
+<!--
+  The course is aimed at graduate students and other researchers.
+-->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  The course is aimed at PhD students from the "Experimental Plant Sciences" graduate school. <br>
+  PhD students from other graduate schools as well as post-docs and researchers may be accepted provided space is available; please contact the organisers.
 </p>
 
 <!--
@@ -87,9 +91,20 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 <p>
   <strong>Requirements:</strong> Participants must bring a laptop with
   a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
-  Software Carpentry's
+  <a href="#setup">below</a>). <br>
+  Participants are also required to abide by Software Carpentry's
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
+</p>
+
+<!--
+  Section added for the registration.
+-->
+<p>
+  <strong>Registration:</strong> Information about registration
+  will be available soon. <br>
+  The registration fee is 60 EUR for PhD students from the
+  "Experimental Plant Sciences" graduate school, and 100 EUR
+  for all others.
 </p>
 
 <!--
@@ -99,12 +114,12 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 -->
 <p>
   <strong>Contact</strong>:
-  Please mail
-  {% if page.contact %}
+  Please email Karin Lagesen
+  ({% if page.contact %}
     <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
   {% else %}
     <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
-  {% endif %}
+  {% endif %})
   for more information.
 </p>
 
@@ -119,10 +134,10 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 
 <div class="row-fluid">
   <div class="span6">
-    <h3>Day 1</h3>
+    <h3>Day 1 (9 February 2015)</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
+      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
       <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
@@ -130,7 +145,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     </table>
   </div>
   <div class="span6">
-    <h3>Day 2</h3>
+    <h3>Day 2 (10 February 2015)</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
       <tr> <td>10:30</td>  <td>Coffee</td> </tr>
@@ -497,7 +512,10 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   </div>
 </div> <!-- End of 'Python' section. -->
 
-<div> <!-- Start of 'R' section. -->
+
+<!--
+  This section was commented for WUR (the comments inside the comments had to be removed too)
+<div>
   <h3>R</h3>
 
   <p>
@@ -540,7 +558,8 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       </p>
     </div>
   </div>
-</div> <!-- End of 'R' section. -->
+</div> 
+-->
 
 <div> <!-- Start of 'SQLite' section. -->
   <h3>SQLite</h3>
