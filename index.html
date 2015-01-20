@@ -65,7 +65,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 <p>
   <strong>Who:</strong>
   The course is aimed at PhD students from the "Experimental Plant Sciences" graduate school. <br>
-  PhD students from other graduate schools as well as post-docs and researchers may be accepted provided space is available; please contact the organisers.
+  PhD students from other graduate schools as well as post-docs and researchers may be accepted provided space is available; please contact us.
 </p>
 
 <!--
@@ -77,7 +77,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 {% if page.latlng %}
 <p>
   <strong>Where:</strong>
-  {{page.address}}.
+  {{page.address}}. <br>
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
@@ -115,11 +115,11 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 <p>
   <strong>Contact</strong>:
   Please email Karin Lagesen
-  ({% if page.contact %}
-    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+  {% if page.contact %}
+    (<a href='mailto:{{page.contact}}'>{{page.contact}}</a>)
   {% else %}
-    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
-  {% endif %})
+    (<a href='mailto:{{site.contact}}'>{{site.contact}}</a>)
+  {% endif %}
   for more information.
 </p>
 
@@ -134,7 +134,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 
 <div class="row-fluid">
   <div class="span6">
-    <h3>Day 1 (9 February 2015)</h3>
+    <h3>Day 1 - Monday 9 February 2015</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
       <tr> <td>10:30</td>  <td>Coffee</td> </tr>
@@ -145,7 +145,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     </table>
   </div>
   <div class="span6">
-    <h3>Day 2 (10 February 2015)</h3>
+    <h3>Day 2 - Tuesday 10 February 2015</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
       <tr> <td>10:30</td>  <td>Coffee</td> </tr>
@@ -169,7 +169,7 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 -->
 {% if page.etherpad %}
 <p>
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>
   <br/>
   We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
 </p>
